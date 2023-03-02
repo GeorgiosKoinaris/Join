@@ -1,4 +1,4 @@
-ul {
+.list {
     text-align: left;
     width: 70%;
     margin: auto;
@@ -27,7 +27,7 @@ ul {
 }
 
 @media (max-width:1050px) {
-    ul {
+    .list {
         width: 100%;
     }
 }
