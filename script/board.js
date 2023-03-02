@@ -60,12 +60,12 @@ function htmlForGenerateHTML(element, id, date, nextButton, board, nextBoard) {
     }
     return `
     <div class="card sub-card" draggable="true" ondragstart="startDrag(${id})"><div class="card-body border${element['urgency'].toLowerCase()}">
-            <div id ="chevron${id}" class="card-title chevron" onclick="showMoreTicket(${id})"> <h5> ${element['title']}</h5><img id="chevronImg${id}" src="././img/more.png"></div>
+            <div id ="chevron${id}" class="card-title chevron" onclick="showMoreTicket(${id})"> <h5> ${element['title']}</h5><img id="chevronImg${id}" draggable="false" src="././img/more.png"></div>
             <div id="moreInfo${id}" class="ticketInfo d-none">
             <p class="card-text"><u><i>description:</i></u>&ensp; ${element['description']}</p>
             <p class="card-text"><u><i>due to:</i></u>&ensp; ${date}</p>
             <p class="card-text"><u><i>assigned to:</i></u>&ensp; ${element['assignedTo']}</p><br></Div>
-            <div class="ticket-buttons"  id="buttons${id}"><a href="#" class="btn btn-danger" onclick="deleteTicket(${id})">delete</a>${nextButton}
+            <div class="ticket-buttons" draggable="false" id="buttons${id}"><a href="#" draggable="false" class="btn btn-danger" onclick="deleteTicket(${id})">delete</a>${nextButton}
             </div></div></div>`;
 }
 
@@ -97,8 +97,7 @@ function hideMoreTicket(id) {
  */
 function startDrag(id) {
     currentDrag = id;
-    if (data[currentDrag]['board'] == 'done') {
-    }
+    if (data[currentDrag]['board'] == 'done') {}
 }
 
 /**

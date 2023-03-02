@@ -138,6 +138,6 @@ function deleteTask(i) {
 function addTaskInfo() {
     let container = document.getElementById('backlogBox');
     if (container.innerHTML == '') {
-    container.innerHTML = '<div class="addTaskInfoBox">Please create a new task</div>';
+        container.innerHTML = '<div class="addTaskInfoBox">Please create a new task</div>';
     }
 }
