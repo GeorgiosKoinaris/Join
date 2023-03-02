@@ -1,0 +1,351 @@
+.header {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.right-container {
+    max-width: 1250px;
+}
+
+.none {
+    display: none !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.add-task-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: #F4F3FB;
+    box-shadow: 0px 0px 0px 11px #F4F3FB;
+    -webkit-box-shadow: 0px 0px 0px 11px #F4F3FB;
+    -moz-box-shadow: 0px 0px 0px 11px rgba(15, 39, 225, 0.2);
+    border-radius: 5px;
+    gap: 0px 10px;
+    margin-left: 90px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+textarea {
+    display: flex;
+    height: 90px;
+    min-width: 420px;
+    font-size: 20px;
+    resize: none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#add-task-dueDate {
+    height: 60px;
+    min-width: 420px;
+    font-size: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.add-task-select {
+    height: 60px;
+    min-width: 420px;
+    font-size: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+input {
+    height: 60px;
+    min-width: 420px;
+    font-size: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.add-task-assigned-to {
+    min-width: 420px;
+    height: 250px;
+}
+
+.profiles {
+    width: 240px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.form-control {
+    font-size: 18px;
+}
+
+#icon-plus {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+#icon-plus:hover {
+    cursor: pointer;
+    transform: scaleX(1.05) scaleY(1.05);
+}
+
+.add-task-margin-bottom {
+    margin-bottom: 40px;
+}
+
+.add-task-margin-right {
+    margin-right: 30px;
+}
+
+.add-task-margin-top {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#add-task-change-profile {
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-top: 12px;
+    width: 170px;
+}
+
+.add-task-description-input {
+    height: 250px;
+}
+
+.profile-pic {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.add-task-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 45px;
+}
+
+.btn {
+    height: 50px;
+    width: 160px;
+}
+
+.add-task-posted-container {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.add-task-posted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 15%);
+    -webkit-box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 15%);
+    -moz-box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 15%);
+}
+
+.btn-posted {
+    margin-top: 20px;
+}
+
+@media(max-width:1190px) {
+    .add-task-content {
+        margin: 0;
+    }
+
+    textarea {
+        display: flex;
+        height: 90px;
+        min-width: 380px;
+        font-size: 20px;
+        resize: none;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    #add-task-dueDate {
+        height: 60px;
+        min-width: 380px;
+        font-size: 25px;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .add-task-select {
+        height: 60px;
+        min-width: 380px;
+        font-size: 25px;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    input {
+        height: 60px;
+        min-width: 380px;
+        font-size: 25px;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .add-task-assigned-to {
+        min-width: 380px;
+        height: 250px;
+    }
+
+    .profiles {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+
+    .add-task-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:1105px) {
+    .add-task-content {
+        flex-direction: column;
+        min-width: 30%;
+    }
+    .profile-pic {
+        height: 80px;
+        width: 80px;
+        margin-left: 40px;
+    }
+}
+
+@media(max-width:620px) {
+    .add-task-content {
+        min-width: 390px;
+    }
+}
+
+@media(max-width:560px) {
+    .add-task-posted-container {
+        left: 20%;
+    }
+}
+
+@media(max-width:440px) {
+    .add-task-content {
+        min-width: 70%;
+        padding-bottom: 60px;
+    }
+
+    .add-task-content {
+       min-width: 120px !important;
+    }
+
+    textarea {
+        min-width: 120px !important;
+    }
+
+    input {
+        min-width: 120px !important;
+    }
+
+    #add-task-dueDate {
+        min-width: 120px !important;
+    }
+
+    .add-task-assigned-to {
+        margin-top: 20px;
+        min-width: 120px !important;
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+    }
+
+    .add-task-margin-top {
+        width: 120px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .add-task-select {
+        min-width: 250px !important;
+    }
+
+    .profiles {
+        width: 145px;
+    }
+
+    .profile-pic {
+        height: 70px;
+        width: 70px;
+        margin: 0;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .add-task-buttons {
+        width: 99%;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 110px;
+    }
+
+    .form-control {
+        width: 250px;
+    }
+
+    .add-task-posted-container {
+        left: 10%;
+    }
+}
+
+@media(max-width:380px) {
+    .add-task-posted {
+        width: 220px;
+        height: 230px;
+    }
+
+    .add-task-posted-container {
+        left: 20%;
+    }
+}
+
+@media(max-width:300px) {
+    .add-task-posted {
+        width: 180px;
+        height: 200px;
+    }
+}
