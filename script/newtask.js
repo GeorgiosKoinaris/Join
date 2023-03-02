@@ -44,10 +44,6 @@ function openNewTaskWindow() {
 }
 
 function checkDate() {
-    let selectedText = document.getElementById('add-task-dueDate').value;
-    let selectedDate = new Date(selectedText);
-    let now = new Date();
-    if (selectedDate < now) {
-        alert("Date cannot be set in the past");
-    }
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementById("add-task-dueDate").setAttribute('min', today);
 }
