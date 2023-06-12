@@ -43,6 +43,20 @@ function openNewTaskWindow() {
     document.getElementById('add-task-posted').classList.add('none');
 }
 
+function enableDateInput() {
+    var dateInput = document.getElementById("add-task-dueDate");
+    dateInput.addEventListener("keydown", handleDateInput);
+    dateInput.focus();
+}
+
+function handleDateInput(event) {
+    // Erlauben nur Zahlen und einige Steuerzeichen
+    var allowedKeys = ["Backspace", "Tab", "ArrowLeft", "ArrowRight", "Delete", "Home", "End"];
+    if (!allowedKeys.includes(event.key) && isNaN(parseInt(event.key))) {
+        event.preventDefault();
+    }
+}
+
 function checkDate() {
     var today = new Date().toISOString().split('T')[0];
     document.getElementById("add-task-dueDate").setAttribute('min', today);
